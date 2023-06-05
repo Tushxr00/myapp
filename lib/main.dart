@@ -17,11 +17,19 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueGrey[600],
       ),
-      body: const Center(
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.lightBlue,
-          size: 50,
+      body:  Center(
+        child: ElevatedButton(
+          child: const Text('click me'),
+          onPressed: (){
+             print('hi');
+          },
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.green,
+            textStyle: const TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontStyle: FontStyle.normal,
+            )
+          ),
         )
       ),
       floatingActionButton: FloatingActionButton(
