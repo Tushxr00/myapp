@@ -17,16 +17,13 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueGrey[600],
       ),
-      body: Center(
-        child: Text(
-          'hello ninjas',
-          style: TextStyle(
-              fontSize: 24.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
-              color: Colors.grey[600],
-              fontFamily: 'IndieFlower'
-          ),),),
+      body: const Center(
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.lightBlue,
+          size: 50,
+        )
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         backgroundColor: Colors.blueGrey[600],
