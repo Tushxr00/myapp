@@ -17,22 +17,19 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueGrey[600],
       ),
-      body: const  Center(
-        // child: ElevatedButton(
-        //   child: const Text('click me'),
-        //   onPressed: (){
-        //      print('hi');
-        //   },
-        //   style: ElevatedButton.styleFrom(backgroundColor: Colors.green,
-        //     textStyle: const TextStyle(
-        //       color: Colors.white,
-        //       fontSize: 20,
-        //       fontStyle: FontStyle.normal,
-        //     )
-        //   ),
-        //
-        child: Image(
-          image: NetworkImage('https://cdn.shopify.com/s/files/1/0558/2081/files/PCC_Cyberpunk_reg_Lg.jpg?v=1607382053'),
+      body:  Center(
+        child: TextButton(
+          child: const Text('click me',style: TextStyle(color: Colors.yellow),),
+          onPressed: (){
+             print('hi');
+          },
+          style: TextButton.styleFrom(
+              backgroundColor: Colors.red,
+              textStyle:  const TextStyle(
+              fontSize: 20,
+              fontStyle: FontStyle.normal,
+            )
+          ),
         )
       ),
       floatingActionButton: FloatingActionButton(
