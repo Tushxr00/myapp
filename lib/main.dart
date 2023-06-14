@@ -17,30 +17,13 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueGrey[600],
       ),
-      // body: Center(
-      //     child: ElevatedButton.icon(
-      //   onPressed: () {
-      //     print('mailed you');
-      //   },
-      //   icon: const Icon(
-      //     Icons.mail,
-      //     color: Colors.black,
-      //   ),
-      //   label: const Text(
-      //     'Mail me',
-      //     style: TextStyle(color: Colors.black, fontSize: 20),
-      //   ),
-      //   style: ElevatedButton.styleFrom(
-      //     backgroundColor: Colors.amber,
-      //   ),
-      // )),
-      body: Center(
-        child: IconButton(
-          onPressed: (){print('haha');},
-          icon: Icon(Icons.bluetooth_connected_sharp),
-          color: Colors.amber,
-        ),
+      body: Container(
+        padding: EdgeInsets.fromLTRB(10, 20,30, 40),
+        margin: EdgeInsets.all(30),
+        color: Colors.grey[400],
+        child: Text('hello'),
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           print('you clicked me');
