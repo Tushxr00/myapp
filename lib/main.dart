@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:  AppBar(
-        title: const  Text('My first App'),
+        title: const  Text('My first App',),
         centerTitle: true,
         backgroundColor: Colors.blueGrey[600],
       ),
@@ -22,8 +22,18 @@ class Home extends StatelessWidget {
             onPressed: (){
               print('mailed you');
             },
-            icon: Icon(Icons.mail),
-            label: Text('Mail me'),
+            icon:const Icon(
+                Icons.mail,
+              color: Colors.black,
+            ),
+            label: const Text(
+              'Mail me',
+              style:TextStyle(
+               color: Colors.black,
+                  fontSize: 20
+              )
+              ,
+            ),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.amber,
 
